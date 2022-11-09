@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "erb-formatter", "~> 0.3.0"
+
+gem "rufo", "~> 0.13.0"
