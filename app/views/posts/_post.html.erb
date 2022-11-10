@@ -1,7 +1,8 @@
 <div id="<%= dom_id post %>">
   <div class="container">
-    <h4>(<%= post.id %>) <%= post.title %></h4>
-
+    <h3>(<%= post.id %>)
+      <%= post.title %></h3>
+    <h6><%= pluralize(post.views, "view") %></h6>
     <pre>
       <%= post.body %>
     </pre>

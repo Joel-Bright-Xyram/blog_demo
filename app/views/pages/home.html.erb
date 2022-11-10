@@ -1,5 +1,7 @@
 <div class="container">
-    <h1>My Personal Home Page</h1>
-    <p>Hi there, you can read more about me here. <%= link_to "About me", about_path %></p>
-    <p>And you can read all of the posts created here. <%= link_to "All posts", posts_path%></p>
+  <h1>My Personal Home Page</h1>
+  <p>Hi there, you can read more about me here.
+  </p>
+  <%= link_to "About me", about_path, class: "btn btn-secondary" %>
+  <%= link_to "All posts", posts_path , {class: "btn btn-primary", title: "You can read all of the posts created here."} %>
 </div>

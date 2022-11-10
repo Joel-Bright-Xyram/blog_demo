@@ -1,12 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-  <div class="container">
-<%= render @post %>
+<div class="container">
+  <%= render @post %>
 
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
+  <div>
+    <%= link_to "Edit this post", edit_post_path(@post), {class: "btn btn-primary", title: "You can edit this post."} %>
+    |
+    <%= link_to "Back to posts", posts_path, {class: "btn btn-secondary", title: "You can read all of the posts created here."} %>
 
-  <%= button_to "Destroy this post", @post, method: :delete %>
-</div>
+    <%= button_to "Destroy this post", @post, {class: "btn btn-danger", title: "You can delete this post.", method: :delete} %>
+  </div>
 </div>

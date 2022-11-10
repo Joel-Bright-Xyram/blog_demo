@@ -6,10 +6,9 @@
     <% @posts.each do |post| %>
       <%= render post %>
       <p>
-        <%= link_to "Show post #{post.id}", post %>
+        <%= link_to "Show post #{post.id}", post, {class: "btn btn-info", title: "You can view the post #{post.id}."} %>
       </p>
     <% end %>
   </div>
-  <%= link_to "New post", new_post_path %>
+  <%= link_to "New post", new_post_path, {class: "btn btn-primary", title: "You can create a new post here."} %>
 </div>
-

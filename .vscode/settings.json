@@ -6,5 +6,8 @@
   "editor.formatOnSaveMode": "file", // required to format on save
   "files.autoSave": "onFocusChange",
   "rufo.exe": "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/rufo-0.13.0", // can be an absolute path
-  "rufo.useBundler": false
+  "rufo.useBundler": false,
+  "[erb]": {
+    "editor.defaultFormatter": "elia.erb-formatter"
+  }
 }
